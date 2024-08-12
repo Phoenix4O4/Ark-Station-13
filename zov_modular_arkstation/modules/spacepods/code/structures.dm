@@ -14,7 +14,7 @@
 	var/target_fuel = 0
 	var/shlang_na_meste = TRUE
 	var/obj/item/shlang/shlang
-	//var/light_mask = "spacegas-light-mask"
+	// var/light_mask = "spacegas-light-mask"
 	//var/datum/beam/current_beam
 
 /obj/effect/ebeam/fuel_hose
