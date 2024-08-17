@@ -337,8 +337,8 @@
 	water_level = max(0, change)
 	hud_used?.thirst?.update_appearance()
 
-/mob/living/set_thirst(change, max)
+/*/mob/living/set_thirst(change, max)
 	. = ..()
-	mob_mood?.HandleThirst()
+	mob_mood?.HandleThirst() */
 
 #undef MOOD_CATEGORY_WATER
