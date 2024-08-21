@@ -16,6 +16,14 @@
 	var/list/modifiers = params2list(params)
 	var/is_right_clicking = LAZYACCESS(modifiers, RIGHT_CLICK)
 
+	//Monkestation edit: REPLAYS
+	SSdemo.mark_dirty(src)
+	if(isturf(target))
+		SSdemo.mark_turf(target)
+	else
+		SSdemo.mark_dirty(target)
+	//Monkestation edit: REPLAYS
+
 	var/item_interact_result = target.base_item_interaction(user, src, modifiers)
 	if(item_interact_result & ITEM_INTERACT_SUCCESS)
 		return TRUE
@@ -77,6 +85,7 @@
 	if(SEND_SIGNAL(src, COMSIG_ITEM_ATTACK_SELF, user) & COMPONENT_CANCEL_ATTACK_CHAIN)
 		return TRUE
 	interact(user)
+	SSdemo.mark_dirty(src) //Monkestation Edit: Replays
 
 /// Called when the item is in the active hand, and right-clicked. Intended for alternate or opposite functions, such as lowering reagent transfer amount. At the moment, there is no verb or hotkey.
 /obj/item/proc/attack_self_secondary(mob/user, modifiers)

@@ -331,9 +331,21 @@
 /datum/light_source/proc/remove_lum()
 	SETUP_CORNERS_REMOVAL_CACHE(src)
 	applied = FALSE
+	var/list/turfs_to_mark = list()
 	for (var/datum/lighting_corner/corner as anything in effect_str)
 		REMOVE_CORNER(corner)
 		LAZYREMOVE(corner.affecting, src)
+
+		// monkestation start: REPLAYS
+		turfs_to_mark += list(
+			corner.master_NE,
+			corner.master_SE,
+			corner.master_SW,
+			corner.master_NW
+		)
+		// monkestation end: REPLAYS
+
+	SSdemo.mark_multiple_turfs(turfs_to_mark) // monkestation edit: REPLAYS
 
 	effect_str = null
 
@@ -467,7 +479,7 @@
 	var/oldlum = source_turf.luminosity
 	var/working_range = CEILING(light_range + visual_offset, 1)
 	source_turf.luminosity = working_range
-
+	var/list/turfs_to_mark = list()
 	var/uses_multiz = !!GET_LOWEST_STACK_OFFSET(source_turf.z)
 
 	if(!uses_multiz) // Yes I know this could be acomplished with an if in the for loop, but it's fukin lighting code man
@@ -476,6 +488,7 @@
 				continue
 			INSERT_CORNERS(corners, T)
 		source_turf.luminosity = oldlum
+		turfs_to_mark += T // Monkestation Edit: REPLAYS
 		return corners
 
 	for(var/turf/T in view(working_range, source_turf))
@@ -495,6 +508,7 @@
 				break
 			// Now we do lighting things to it
 			INSERT_CORNERS(corners, below)
+			turfs_to_mark += T // Monkestation Edit: REPLAYS
 			// ANNND then we add the one below it
 			previous = below
 			below = GET_TURF_BELOW(below)
@@ -506,8 +520,10 @@
 				break
 			INSERT_CORNERS(corners, above)
 			above = GET_TURF_ABOVE(above)
+		turfs_to_mark += T // Monkestation Edit: REPLAYS
 
 	source_turf.luminosity = oldlum
+	SSdemo.mark_multiple_turfs(turfs_to_mark)
 	return corners
 
 /datum/light_source/proc/update_corners()

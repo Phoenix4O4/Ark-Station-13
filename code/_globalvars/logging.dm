@@ -75,6 +75,12 @@ GLOBAL_PROTECT(investigate_signaler)
 GLOBAL_LIST_EMPTY(lawchanges)
 GLOBAL_PROTECT(lawchanges)
 
+
+//Monkestation Edit: REPLAYS
+GLOBAL_VAR(demo_log)
+GLOBAL_PROTECT(demo_log)
+//Monkestation Edit: REPLAYS
+
 #undef DECLARE_LOG
 #undef DECLARE_LOG_NAMED
 #undef START_LOG

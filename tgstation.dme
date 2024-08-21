@@ -8691,6 +8691,8 @@
 #include "zov_modular_arkstation\_master_files\code\modules\quirks\code\negative_quirks\well_trained.dm"
 #include "zov_modular_arkstation\_master_files\code\modules\quirks\code\positive_quirks\dominant_aura.dm"
 #include "zov_modular_arkstation\_master_files\code\modules\reagents\chemistry\machinery\chem_dispenser.dm"
+#include "zov_modular_arkstation\_master_files\code\modules\replays\replay.dm"
+#include "zov_modular_arkstation\_master_files\code\modules\replays\hooks\generic_hooks.dm"
 #include "zov_modular_arkstation\_master_files\code\modules\surgery\bodyparts\parts.dm"
 #include "zov_modular_arkstation\_master_files\code\modules\tarkon\research.dm"
 #include "zov_modular_arkstation\_master_files\code\modules\wiremod\core\integrated_circuit.dm"
