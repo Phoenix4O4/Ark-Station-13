@@ -424,5 +424,5 @@ SUBSYSTEM_DEF(garbage)
 			SSgarbage.Queue(to_delete)
 	//Monkestation Edit: REPLAYS
 	if(to_delete)
-		SSdemo.mark_destroyed(to_delete)
+		SSdemo?.mark_destroyed(to_delete)
 	//Monkestation Edit: REPLAYS

@@ -487,8 +487,8 @@
 			if(IS_OPAQUE_TURF(T))
 				continue
 			INSERT_CORNERS(corners, T)
+			turfs_to_mark += T // Monkestation Edit: REPLAYS
 		source_turf.luminosity = oldlum
-		turfs_to_mark += T // Monkestation Edit: REPLAYS
 		return corners
 
 	for(var/turf/T in view(working_range, source_turf))

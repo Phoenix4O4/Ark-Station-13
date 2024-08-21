@@ -7,7 +7,7 @@
 
 #define isatom(A) (isloc(A))
 
-#define ismovableatom(A) (istype(A, /atom/movable))
+//#define ismovableatom(A) (istype(A, /atom/movable))
 
 #define isdatum(thing) (istype(thing, /datum))
 

@@ -91,6 +91,7 @@
 		return
 
 	set_light(l_range = 0)
+	SSdemo.mark_dirty(src) //Monkestation Edit: REPLAYS
 
 /obj/machinery/door/window/animation_length(animation)
 	switch(animation)

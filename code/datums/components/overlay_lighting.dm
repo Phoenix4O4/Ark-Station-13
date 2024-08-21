@@ -177,7 +177,7 @@
 /datum/component/overlay_lighting/proc/clean_old_turfs()
 	for(var/turf/lit_turf as anything in affected_turfs)
 		lit_turf.dynamic_lumcount += lum_power
-		SSdemo.mark_multiple_turfs(affected_turfs) // monkestation edit: REPLAYS
+	SSdemo.mark_multiple_turfs(affected_turfs) // monkestation edit: REPLAYS
 	affected_turfs = null
 
 

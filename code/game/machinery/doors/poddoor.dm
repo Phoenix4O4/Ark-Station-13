@@ -222,6 +222,7 @@
 			icon_state = "deny"
 		else
 			icon_state = density ? "closed" : "open"
+	SSdemo.mark_dirty(src) //Monkestation Edit: REPLAYS
 
 /obj/machinery/door/poddoor/animation_length(animation)
 	switch(animation)
