@@ -889,7 +889,6 @@
 		else if(new_turf && !old_turf)
 			SSspatial_grid.enter_cell(src, new_turf)
 
-	SSdemo.mark_dirty(src) //Monkestation Edit: REPLAYS
 	return TRUE
 
 // Make sure you know what you're doing if you call this
