@@ -12,7 +12,7 @@
 		systems that heavily influence the user's nervous system, like the central nervous system rebooter."
 	icon = 'modular_nova/modules/implants/icons/implants.dmi'
 	icon_state = "sandy"
-	slot = ORGAN_SLOT_BRAIN_ANTISTUN
+	slot = ORGAN_SLOT_BRAIN_CNS
 	zone = BODY_ZONE_HEAD
 	implant_overlay = null
 	implant_color = null
@@ -130,7 +130,7 @@
 		hacking for you. Due to their complexity, the system does not appear to work on cyborgs."
 	icon = 'modular_nova/modules/implants/icons/implants.dmi'
 	icon_state = "hackerman"
-	slot = ORGAN_SLOT_BRAIN_ANTISTUN
+	slot = ORGAN_SLOT_BRAIN_CNS
 	zone = BODY_ZONE_HEAD
 	implant_overlay = null
 	implant_color = null
@@ -224,7 +224,7 @@
 	cast_on.forensics?.add_hacking_implant_trace()
 	cast_on.add_hiddenprint(owner)
 
-	playsound(cast_on, 'sound/machines/terminal_processing.ogg', 15, TRUE)
+	playsound(cast_on, 'sound/machines/terminal/terminal_processing.ogg', 15, TRUE)
 
 	var/mob/living/carbon/human/human_owner = owner
 

@@ -7169,7 +7169,7 @@
 /turf/open/floor/iron/white,
 /area/station/science/xenobiology)
 "cdu" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8
 	},
@@ -10445,7 +10445,7 @@
 /turf/open/floor/wood,
 /area/station/service/library)
 "daq" = (
-/obj/machinery/computer/crew{
+/obj/machinery/computer/cargo/request/sec{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -14818,9 +14818,8 @@
 /obj/effect/turf_decal/tile/brown/half/contrasted{
 	dir = 4
 	},
-/obj/machinery/computer/order_console/mining{
-	dir = 8
-	},
+/obj/structure/table,
+/obj/item/storage/medkit/regular,
 /turf/open/floor/iron/dark,
 /area/station/cargo/miningdock)
 "esn" = (
@@ -15747,7 +15746,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "eGX" = (
-/obj/machinery/vending/boozeomat/all_access,
+/obj/machinery/vending/boozeomat,
 /turf/closed/wall,
 /area/station/maintenance/port/aft)
 "eHe" = (
@@ -24702,7 +24701,7 @@
 "hul" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/status_display/evac/directional/north,
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /turf/open/floor/iron,
 /area/station/commons/locker)
 "hun" = (
@@ -34594,7 +34593,7 @@
 /turf/open/floor/iron/dark/telecomms,
 /area/station/tcommsat/server)
 "krV" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /obj/structure/window/reinforced/spawner/directional/west,
 /turf/open/floor/iron/dark/textured,
 /area/station/security/prison)

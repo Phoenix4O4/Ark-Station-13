@@ -12,6 +12,11 @@
 	name = "Drawing Tablet"
 	item_path = /obj/item/canvas/drawingtablet
 
+/datum/loadout_item/pocket_items/stellar_bouquet
+	name = "Stellar Bouquet"
+	item_path = /obj/item/bouquet/stellar
+	ckeywhitelist = list("thedragmeme")
+
 /datum/loadout_item/under/jumpsuit/paddedunder
 	name = "Feathered Serenity Suit"
 	item_path = /obj/item/clothing/under/padded
@@ -31,6 +36,11 @@
 	name = "Feathered Serenity Cloak"
 	item_path = /obj/item/clothing/neck/padded/alt
 	// ARK STATION REMOVED: ckeywhitelist = list("snailomi")
+
+/datum/loadout_item/neck/padded/security
+	name = "Vanguard Cloak"
+	item_path = /obj/item/clothing/neck/padded/security
+	ckeywhitelist = list("actualvanguard")
 
 /datum/loadout_item/gloves/padded
 	name = "Serenity Gloves"
@@ -785,9 +795,9 @@
 	// ARK STATION REMOVED: ckeywhitelist = list("dtfe")
 
 /datum/loadout_item/neck/trenchcoat
-	name = "Graceful Trenchcoat"
+	name = "Secure Trenchcoat"
 	item_path = /obj/item/clothing/neck/trenchcoat
-	ckeywhitelist = list("Smol42", "Awers855")
+	ckeywhitelist = list("Smol42")
 
 /datum/loadout_item/under/jumpsuit/old_qm_jumpskirt
 	name = "Old Quartermaster's Jumpskirt"
@@ -860,3 +870,23 @@
 	name = "One-Sleeved Leotard"
 	item_path = /obj/item/clothing/under/pants/half_leotard_cosmiclaer
 	// ARK STATION REMOVED: ckeywhitelist = list("cosmiclaer")
+
+/datum/loadout_item/under/jumpsuit/shendyt
+	name = "Shendyt"
+	item_path = /obj/item/clothing/under/costume/shendyt
+	// ARK STATION REMOVED: ckeywhitelist = list("hyperhazel")
+
+/datum/loadout_item/pocket_items/jumperbox
+	name = "Jumper Conversation Kit Box"
+	item_path = /obj/item/mod/skin_applier/jumper
+	// ARK STATION REMOVED: ckeywhitelist = list("bonkaitheroris")
+
+/datum/loadout_item/pocket_items/starfruit_seed
+	name = "Primidine Starfruit Seed"
+	item_path = /obj/item/seeds/starfruit
+	// ARK STATION REMOVED: ckeywhitelist = list("snailomi", "thedragmeme")
+
+/datum/loadout_item/suit/butter
+	name = "Butter Costume"
+	item_path = /obj/item/clothing/suit/costume/butter
+	// ARK STATION REMOVED: ckeywhitelist = list("drpmstr", "pyritechimera")

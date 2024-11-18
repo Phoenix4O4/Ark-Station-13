@@ -17913,7 +17913,7 @@
 /turf/open/floor/stone,
 /area/station/commons/lounge)
 "fjo" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /obj/effect/turf_decal/tile/dark/opposingcorners{
 	dir = 1
 	},
@@ -21420,6 +21420,7 @@
 /area/station/maintenance/department/engineering/atmos/hfr_maint)
 "ggU" = (
 /obj/machinery/computer/station_alert,
+/obj/machinery/keycard_auth/wall_mounted/directional/north,
 /turf/open/floor/wood/large,
 /area/station/command/heads_quarters/ce)
 "ghd" = (
@@ -44476,7 +44477,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/fore)
 "mLB" = (
-/obj/machinery/vending/autodrobe/all_access,
+/obj/machinery/vending/autodrobe,
 /obj/effect/turf_decal/tile/blue/opposingcorners{
 	dir = 1
 	},

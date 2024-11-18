@@ -3,8 +3,9 @@
 	name = "energy gun"
 	desc = "A basic energy-based gun."
 	icon = 'icons/obj/weapons/guns/energy.dmi'
-	pickup_sound = 'sound/items/gun_pick_up.ogg'
-	drop_sound = 'sound/items/gun_drop.ogg'
+	pickup_sound = 'sound/items/handling/gun/gun_pick_up.ogg'
+	drop_sound = 'sound/items/handling/gun/gun_drop.ogg'
+	sound_vary = TRUE
 
 	/// What type of power cell this uses
 	var/obj/item/stock_parts/power_store/cell
@@ -76,7 +77,10 @@
 		recharge_newshot() //and try to charge a new shot
 		update_appearance()
 
-/obj/item/gun/energy/get_cell()
+/obj/item/gun/energy/get_cell(atom/movable/interface, mob/user)
+	if(istype(interface, /obj/item/inducer))
+		to_chat(user, span_alert("Error: unable to interface with [interface]."))
+		return null
 	return cell
 
 /obj/item/gun/energy/Initialize(mapload)
@@ -137,6 +141,7 @@
 		ammo_type[i] = shot
 	shot = ammo_type[select]
 	fire_sound = shot.fire_sound
+	fire_sound_volume = shot.fire_sound_volume // ARK STATION ADDITION
 	fire_delay = shot.delay
 
 /obj/item/gun/energy/Destroy()
@@ -218,6 +223,7 @@
 		select = 1
 	var/obj/item/ammo_casing/energy/shot = ammo_type[select]
 	fire_sound = shot.fire_sound
+	fire_sound_volume = shot.fire_sound_volume // ARK STATION ADDITION
 	fire_delay = shot.delay
 	if (shot.select_name && user)
 		balloon_alert(user, "set to [shot.select_name]")

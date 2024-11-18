@@ -75,7 +75,7 @@
 #define DATA_HUD_AI_DETECT 9
 #define DATA_HUD_FAN 10
 #define DATA_HUD_MALF_APC 11
-// #define DATA_HUD_PERMIT 12 //NOVA EDIT // ARK STATION REMOVED
+#define DATA_HUD_PERMIT 12 //NOVA EDIT
 
 /// cooldown for being shown the images for any particular data hud
 #define ADD_HUD_TO_COOLDOWN 20
@@ -92,6 +92,7 @@
 #define SECHUD_ASSISTANT "hudassistant"
 #define SECHUD_ATMOSPHERIC_TECHNICIAN "hudatmospherictechnician"
 #define SECHUD_BARTENDER "hudbartender"
+#define SECHUD_BUSSER "hudbusser"
 #define SECHUD_BITAVATAR "hudbitavatar"
 #define SECHUD_BITRUNNER "hudbitrunner"
 #define SECHUD_BOTANIST "hudbotanist"
