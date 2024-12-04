@@ -169,10 +169,10 @@
 	attached_cable.add_delayedload(current_power)
 
 	var/money_ratio = round(current_power * divide_ratio) * SSpowerator_penality.diminishing_gains_multiplier
-	//BUBBER EDIT CHANGE BEGIN - Use credits_account variable for our department look up
-	//var/datum/bank_account/synced_bank_account = SSeconomy.get_dep_account(ACCOUNT_CAR) - BUBBER EDIT - ORIGINAL
+	//ARK STATION EDIT CHANGE BEGIN - Use credits_account variable for our department look up
+	//var/datum/bank_account/synced_bank_account = SSeconomy.get_dep_account(ACCOUNT_CAR) - ARK STATION EDIT - ORIGINAL
 	var/datum/bank_account/synced_bank_account = SSeconomy.get_dep_account(credits_account == "" ? ACCOUNT_CAR : credits_account)
-	//BUBBER EDIT CHANGE END
+	//ARK STATION EDIT CHANGE END
 	synced_bank_account.adjust_money(money_ratio)
 	credits_made += money_ratio
 

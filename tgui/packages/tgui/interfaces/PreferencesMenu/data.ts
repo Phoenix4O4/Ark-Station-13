@@ -198,8 +198,10 @@ export type PreferencesMenuData = {
       gender: Gender;
       joblessrole: JoblessRole;
       species: string;
-      loadout_list: LoadoutList;
+      // loadout_list: LoadoutList; // ARK STATION EDIT REMOVAL: Multiple loadout presets
       job_clothes: BooleanLike;
+      loadout_lists: LoadoutList; // ARK STATION EDIT ADDITION: Multiple loadout presets
+      loadout_index: string; // ARK STATION EDIT ADDITION: Multiple loadout presets
     };
 
     randomization: Record<string, RandomSetting>;
