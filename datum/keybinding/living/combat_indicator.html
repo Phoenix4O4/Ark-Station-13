@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><base href="../../../"><link rel="stylesheet" href="dmdoc.css"><title>/datum/keybinding/living/combat_indicator - /tg/ Station 13</title></head><body><header><a href="index.html">/tg/ Station 13</a> - <a href="index.html#modules">Modules</a> - <a href="index.html#types">Types</a></header><main><h1>combat_indicator <aside>/<a href="datum.html">datum</a>/<a href="datum/keybinding/living/combat_indicator.html">keybinding/living/combat_indicator</a></aside> <a href="https://github.com/Phoenix4O4/Ark-Station-13/blob/489547e0e7471a76afa9f6c798952b45a008e4bb/modular_nova/modules/indicators/code/combat_indicator.dm#L203"><img src="git.png" width="16" height="16" title="modular_nova/modules/indicators/code/combat_indicator.dm 203"></a></h1><p>Called whenever a mob enters a vehicle/sealed, after everything else.</p>
+<p>Sets the vehicle's CI status to that of the mob if the mob is a driver and there are no other drivers, or if the mob is a passenger and there are no drivers.</p>
+<p>Arguments:</p>
+<ul>
+<li>user -- mob/living, the mob that is entering the vehicle.</li>
+</ul>
+<p>Called whenever a mob exits a vehicle/sealed, after everything else.</p>
+<p>Disables the vehicle's CI if it was enabled, and if it was the only occupant (or there was noone else in the mech with CI enabled).</p>
+<p>Arguments:</p>
+<ul>
+<li>user -- mob/living, the mob that is exiting the vehicle.</li>
+</ul></main><footer>tgstation.dme <a href="https://github.com/Phoenix4O4/Ark-Station-13/tree/489547e0e7471a76afa9f6c798952b45a008e4bb">489547e</a> (master) — <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.9.0</a></footer></body></html>
